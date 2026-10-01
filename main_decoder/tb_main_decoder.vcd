@@ -1,0 +1,232 @@
+$date
+	Wed Sep 30 15:45:52 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_main_decoder $end
+$var wire 2 ! result_src [1:0] $end
+$var wire 1 " reg_write $end
+$var wire 1 # mem_write $end
+$var wire 1 $ jump $end
+$var wire 1 % jalr $end
+$var wire 1 & branch $end
+$var wire 2 ' alu_op [1:0] $end
+$var wire 1 ( alu_b_src $end
+$var wire 1 ) alu_a_src $end
+$var wire 11 * actual [10:0] $end
+$var reg 7 + opcode [6:0] $end
+$var integer 32 , errors [31:0] $end
+$var integer 32 - tests [31:0] $end
+$scope module dut $end
+$var wire 7 . opcode [6:0] $end
+$var parameter 7 / B_branch $end
+$var parameter 7 0 I_arith $end
+$var parameter 7 1 I_jalr $end
+$var parameter 7 2 I_load $end
+$var parameter 7 3 J_jal $end
+$var parameter 7 4 R_arith $end
+$var parameter 7 5 S_store $end
+$var parameter 7 6 U_auipc $end
+$var parameter 7 7 U_lui $end
+$var reg 1 ) alu_a_src $end
+$var reg 1 ( alu_b_src $end
+$var reg 2 8 alu_op [1:0] $end
+$var reg 1 & branch $end
+$var reg 1 % jalr $end
+$var reg 1 $ jump $end
+$var reg 1 # mem_write $end
+$var reg 1 " reg_write $end
+$var reg 2 9 result_src [1:0] $end
+$upscope $end
+$scope task check $end
+$var reg 11 : expected [10:0] $end
+$var reg 128 ; name [127:0] $end
+$var reg 7 < op [6:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b110111 7
+b10111 6
+b100011 5
+b110011 4
+b1101111 3
+b11 2
+b1100111 1
+b10011 0
+b1100011 /
+$end
+#0
+$dumpvars
+b110011 <
+b10100100010110101110100011110010111000001100101 ;
+b10000000010 :
+b0 9
+b10 8
+b110011 .
+b0 -
+b0 ,
+b110011 +
+b10000000010 *
+0)
+0(
+b10 '
+0&
+0%
+0$
+0#
+1"
+b0 !
+$end
+#1000
+b11000000010 *
+1(
+b10 '
+b10 8
+1"
+b10011 +
+b10011 .
+b10010010010110101110100011110010111000001100101 ;
+b11000000010 :
+b10011 <
+b1 -
+#2000
+b11000100000 *
+b1 !
+b1 9
+b0 '
+b0 8
+1(
+1"
+b11 +
+b11 .
+b1001100010011110100000101000100 ;
+b11000100000 :
+b11 <
+b10 -
+#3000
+b1010000000 *
+1#
+b0 !
+b0 9
+1(
+0"
+b100011 +
+b100011 .
+b101001101010100010011110101001001000101 ;
+b1010000000 :
+b100011 <
+b11 -
+#4000
+b10001 *
+b1 '
+b1 8
+1&
+0#
+0(
+b1100011 +
+b1100011 .
+b10000100101001001000001010011100100001101001000 ;
+b10001 :
+b1100011 <
+b100 -
+#5000
+b10001001000 *
+1$
+b10 !
+b10 9
+1"
+b0 '
+b0 8
+0&
+b1101111 +
+b1101111 .
+b10010100100000101001100 ;
+b10001001000 :
+b1101111 <
+b101 -
+#6000
+b11001001100 *
+1%
+1(
+1$
+b10 !
+b10 9
+1"
+b1100111 +
+b1100111 .
+b1001010010000010100110001010010 ;
+b11001001100 :
+b1100111 <
+b110 -
+#7000
+b11000000011 *
+b11 '
+b11 8
+0%
+0$
+b0 !
+b0 9
+1(
+1"
+b110111 +
+b110111 .
+b10011000101010101001001 ;
+b11000000011 :
+b110111 <
+b111 -
+#8000
+b11100000000 *
+1)
+b0 '
+b0 8
+1(
+1"
+b10111 +
+b10111 .
+b100000101010101010010010101000001000011 ;
+b11100000000 :
+b10111 <
+b1000 -
+#9000
+b0 *
+0)
+0(
+0"
+b1111 +
+b1111 .
+b100011001000101010011100100001101000101 ;
+b0 :
+b1111 <
+b1001 -
+#10000
+b1110011 +
+b1110011 .
+b100010101000011010000010100110001001100 ;
+b1110011 <
+b1010 -
+#11000
+b100111 +
+b100111 .
+b100011001010000001011010101001101010100010011110101001001000101 ;
+b100111 <
+b1011 -
+#12000
+b0 +
+b0 .
+b101101001000101010100100100111101010011 ;
+b0 <
+b1100 -
+#13000
+b1111111 +
+b1111111 .
+b1001111010011100100010101010011 ;
+b1111111 <
+b1101 -
+#14000
+b1110 -

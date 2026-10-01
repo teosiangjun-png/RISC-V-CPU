@@ -1,0 +1,119 @@
+$date
+	Mon Sep 21 16:09:34 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_Adder $end
+$var wire 5 ! sum [4:0] $end
+$var wire 1 " c_out $end
+$var reg 5 # a [4:0] $end
+$var reg 5 $ b [4:0] $end
+$var reg 1 % c_in $end
+$scope module uut $end
+$var wire 5 & a [4:0] $end
+$var wire 5 ' b [4:0] $end
+$var wire 1 % c_in $end
+$var wire 5 ( sum [4:0] $end
+$var wire 1 " c_out $end
+$var wire 1 ) c4 $end
+$var wire 1 * c3 $end
+$var wire 1 + c2 $end
+$var wire 1 , c1 $end
+$scope module fa0 $end
+$var wire 1 - a $end
+$var wire 1 . b $end
+$var wire 1 % c_in $end
+$var wire 1 , c_out $end
+$var wire 1 / sum $end
+$upscope $end
+$scope module fa1 $end
+$var wire 1 0 a $end
+$var wire 1 1 b $end
+$var wire 1 , c_in $end
+$var wire 1 + c_out $end
+$var wire 1 2 sum $end
+$upscope $end
+$scope module fa2 $end
+$var wire 1 3 a $end
+$var wire 1 4 b $end
+$var wire 1 + c_in $end
+$var wire 1 * c_out $end
+$var wire 1 5 sum $end
+$upscope $end
+$scope module fa3 $end
+$var wire 1 6 a $end
+$var wire 1 7 b $end
+$var wire 1 * c_in $end
+$var wire 1 ) c_out $end
+$var wire 1 8 sum $end
+$upscope $end
+$scope module fa4 $end
+$var wire 1 9 a $end
+$var wire 1 : b $end
+$var wire 1 ) c_in $end
+$var wire 1 " c_out $end
+$var wire 1 ; sum $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0;
+0:
+09
+18
+07
+06
+05
+14
+03
+02
+01
+10
+0/
+1.
+1-
+1,
+1+
+1*
+0)
+b1000 (
+b101 '
+b11 &
+0%
+b101 $
+b11 #
+0"
+b1000 !
+$end
+#10
+08
+b10101 !
+b10101 (
+0*
+0,
+15
+1;
+1/
+02
+0+
+1)
+04
+17
+0-
+00
+13
+16
+b1001 $
+b1001 '
+b1100 #
+b1100 &
+#20
